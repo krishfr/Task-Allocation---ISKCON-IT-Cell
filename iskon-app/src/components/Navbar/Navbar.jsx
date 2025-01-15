@@ -29,10 +29,7 @@ export default function Navbar() {
             <p><Link id='drop-item' to="/VolenteerSignUp">Volenteer</Link></p>
            </div>
         </div>
-        
-      
         </div>
-
-    </div>
+            </div>
   )
 }
