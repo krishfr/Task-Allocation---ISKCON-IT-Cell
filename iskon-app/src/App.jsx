@@ -1,9 +1,14 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+<<<<<<< Updated upstream
 import HomePage from './HomePage/HomePage'
 import Navbar from './components/Navbar/Navbar';
 import ServicesPage from './ServicesPage/ServicesPage';
+=======
+import HomePage from './About/HomePage/HomePage'
+
+>>>>>>> Stashed changes
 
 // Component for Handling Routes
 function AnimatedRoutes() {
