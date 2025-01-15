@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './HomePage/HomePage'
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 
 // Component for Handling Routes
 function AnimatedRoutes() {
