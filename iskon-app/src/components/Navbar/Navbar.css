@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -34,21 +36,21 @@
 .brand-text {
   display: flex;
   flex-direction: column;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Varela Round', system-ui, sans-serif;
 }
 
 .brand-text h1 {
   font-size: 1.2rem;
   margin: 0;
   color: #333;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Varela Round', system-ui, sans-serif;
 }
 
 .brand-text p {
   font-size: 0.8rem;
   margin: 0;
   color: #666;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Varela Round', system-ui, sans-serif;
 }
 
 .nav-links {
@@ -66,7 +68,7 @@
   cursor: pointer;
   border: none;
   background: none;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Varela Round', system-ui, sans-serif;
 }
 
 .nav-link:hover {
@@ -97,7 +99,7 @@
   display: block;
   transition: all 0.3s ease;
   border-bottom: 1px solid #eee;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Varela Round', system-ui, sans-serif;
   font-size: 0.95rem;
 }
 

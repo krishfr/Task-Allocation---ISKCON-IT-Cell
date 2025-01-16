@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import CountUp from 'react-countup';
 import './HomePage.css'
 import carousel1 from '../Assets/carousel1.jpg'
 import carousel2 from '../Assets/carousel2.jpg'
@@ -29,7 +30,7 @@ const HomePage = () => {
         <div className="hero-content">
           <div className="hero-text">
             <span className="since-text">Since 2013</span>
-            <h1>Explore the history and teachings of Lord Krishna & Guru Parampara</h1>
+            <h1>Unveiling the spiritual journey of Lord Krishna & Guru Parampara</h1>
           </div>
           <div className="hero-carousel">
             {images.map((img, index) => (
@@ -53,21 +54,27 @@ const HomePage = () => {
         </div>
         
         <div className="stats-container">
-          <div className="stats-card">
-            <div className="stat-item">
-              <span className="stat-number">300</span>
-              <p className="stat-text">CRORE MEALS SERVED<br />AROUND THE WORLD</p>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">76+</span>
-              <p className="stat-text">CRORE MEALS SERVED<br />SINCE COVID 19 LOCKDOWN</p>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">56</span>
-              <p className="stat-text">YEARS OF SERVICE<br />TO HUMANITY</p>
-            </div>
-          </div>
+      <div className="stats-card">
+        <div className="stat-item">
+          <span className="stat-number">
+            <CountUp start={0} end={300} duration={2.5} />
+          </span>
+          <p className="stat-text">CRORE MEALS SERVED<br />AROUND THE WORLD</p>
         </div>
+        <div className="stat-item">
+          <span className="stat-number">
+            <CountUp start={0} end={76} duration={2.5} suffix="+" />
+          </span>
+          <p className="stat-text">CRORE MEALS SERVED<br />SINCE COVID 19 LOCKDOWN</p>
+        </div>
+        <div className="stat-item">
+          <span className="stat-number">
+            <CountUp start={0} end={56} duration={2.5} />
+          </span>
+          <p className="stat-text">YEARS OF SERVICE<br />TO HUMANITY</p>
+        </div>
+      </div>
+    </div>
       </div>
     </div>
   );
