@@ -1,60 +1,58 @@
-import './Foorter.css'
+import './Footer.css'
 import footerlogo from "../../Assets/footerlogo.jpg";
 import founder from "../../Assets/founder.jpg";
-import Facebook from "../../Assets/Facebook.png";
-import insta from "../../Assets/insta.webp";
-import twitter from "../../Assets/twitter.webp"
-import ytLogo from "../../Assets/ytLogo.png";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 export default function Footer() {
   return (
     <div>
         <footer className="footer">
-    <div className="footer-top">
+      <div className="footer-top">
         <div className="footer-logo">
-          <img src={footerlogo || "/placeholder.svg"} alt="ISKCON Logo" className="footlogo" />
-        </div>
-        <div className='footer-head'>
+          <img src={footerlogo || "/placeholder.svg"} alt="ISKCON Logo" className="logo" />
           <h3>ISKCON</h3>
           <p>
             International Society for Krishna Consciousness
           </p>
         </div>
+
         <div className="footer-founder">
+        <img src={founder|| "/placeholder.svg"} alt="founder" className="founder-image" />
+        <div>
           <h4>Founder-Acharya</h4>
           <p>
             His Divine Grace
             <br />
             A.C. Bhaktivedanta Swami Prabhupada
           </p>
-        </div>
-        <div className='footer-founder-img'>
-          <img src={founder|| "/placeholder.svg"} alt="founder" className="founder-image" />
-        </div>
-    </div>
-    <hr className="short-divider" />
-      <div className='footer-middle'>
-      <div className="footer-about">
-          <h4>About ISKCON</h4>
-          <p>
-          The International Society for Krishna Consciousness (ISKCON), <br /> also known as the Hare Krishna movement,<br /> is
-          dedicated to promoting spiritual knowledge <br /> and the practices of Bhakti Yoga.
-          </p>
+          </div>
         </div>
       </div>
 
       <hr className="divider" />
 
       <div className="footer-bottom">
-      <div className='year'><p>© {new Date().getFullYear()} ISKCON. All Rights Reserved.</p></div>
-      <div className='social-icon'>
-        <a href="#" className="fa"><img src={Facebook|| "/placeholder.svg"} alt="facebook" className="fb-icon" /></a>
-        <a href="#" className="fa"><img src={insta|| "/placeholder.svg"} alt="facebook" className="ig-icon" /></a>
-        <a href="#" className="fa"><img src={twitter|| "/placeholder.svg"} alt="facebook" className="tw-icon" /></a>
-        <a href="#" className="fa"><img src={ytLogo|| "/placeholder.svg"} alt="facebook" className="yt-icon" /></a>
+      <p>© {new Date().getFullYear()} ISKCON. All Rights Reserved.</p>
       
-      </div>
-      </div>
+      <div className="footer-socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FacebookIcon />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <TwitterIcon />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <InstagramIcon />
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <YouTubeIcon />
+            </a>
+          </div>
+          </div>
+      
     </footer>
     </div>
   )

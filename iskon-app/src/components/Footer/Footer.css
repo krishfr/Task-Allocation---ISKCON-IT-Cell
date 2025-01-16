@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  padding: 10px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center; /* Vertically align the logo and text */
+  gap: 20px; /* Add spacing between the logo and text */
+  flex: 1;
+  min-width: 250px;
+  margin: 5px 10px;
+  text-align: left;
+}
+
+.footer-logo .logo {
+  width: 100px;
+  height: auto;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-logo h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #e0e0e0;
+}
+
+.footer-logo p {
+  margin: 5px 0 0 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-about p,
+.footer-founder p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center; /* Vertically align image and text */
+  gap: 10px; /* Add spacing between the image and text */
+  flex: 1;
+}
+
+.footer-founder {
+  display: flex;
+  align-items: center; /* Vertically align image and text */
+  gap: 20px; /* Add spacing between the image and text */
+  min-width: 250px;
+  margin: 10px 15px;
+  text-align: left;
+}
+
+.footer-founder img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover;
+}
+
+.footer-founder h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.footer-founder p {
+  margin: 5px 0 0 0;
+  font-size: 0.9rem;
+}
+
+.divider {
+  border: 0.5px solid #555;
+  margin: 15px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  justify-content: center;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center; /* Align icons to the center horizontally */
+  gap: 25px; /* Increase the gap between icons */
+  margin-top: 10px;
+}
+
+.footer-socials .social-icon {
+  color: #e0e0e0;
+  font-size: 32px; /* Slightly larger icon size */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials .social-icon:hover {
+  color: #007bff; /* Change color on hover */
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}

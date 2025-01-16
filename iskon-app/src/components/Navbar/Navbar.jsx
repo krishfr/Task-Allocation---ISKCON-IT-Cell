@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <img src={navbarlogo || '/placeholder.svg'} alt="ISKCON Logo" className="logo" />
+        <img src={navbarlogo || '/placeholder.svg'} alt="ISKCON Logo" className="navbar-logo" />
         <div className="brand-text">
           <h1>ISKCON</h1>
           <p>International Society for Krishna Consciousness</p>
