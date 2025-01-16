@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
 
         <a href="/guest-house" className="nav-link">Guest House</a>
-        <a href="/media" className="nav-link">Media</a>
+        <a href="/media" className="nav-link">Services</a>
         <a href="/donate" className="nav-link">Donate</a>
         <a href="/contact" className="nav-link">Contact</a>
         <a href="/login" className="nav-link">Login</a>
