@@ -1,5 +1,6 @@
 import React from 'react';
 import './ServicesPage.css';
+import { Link } from 'react-router-dom';
 
 export default function ServicesPage() {
   const teamImages = [
@@ -41,9 +42,9 @@ export default function ServicesPage() {
               />
               <div className="team-content">
                 <h5>{serviceTitles[index]}</h5>
-                <a href="/team/member" className="btn btn-primary">
+                <Link to="/team/member" className="btn btn-primary">
                   Learn More
-                </a>
+                  </Link>
               </div>
             </div>
           ))}

@@ -16,7 +16,7 @@ function AnimatedRoutes() {
     <Navbar/>
     <Routes location={location} key={location.pathname}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/ServicesPage" element={<ServicesPage />} />
+        <Route path="/services" element={<ServicesPage />} />
     </Routes>
     </div>
   );
