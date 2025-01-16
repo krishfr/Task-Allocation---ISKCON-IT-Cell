@@ -6,6 +6,7 @@ import HomePage from './HomePage/HomePage';
 import Navbar from './components/Navbar/Navbar';
 import ServicesPage from './ServicesPage/ServicesPage';
 import Contact from './Contact/Contact.jsx';
+import Footer from "./components/Footer/Footer.jsx"
 
 
 // Animation Variants for Page Transitions
@@ -38,6 +39,7 @@ function AnimatedRoutes() {
           </Routes>
         </motion.div>
       </AnimatePresence>
+      <Footer/>
     </div>
   );
 }
