@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import HomePage from './HomePage/HomePage';
 import Navbar from './components/Navbar/Navbar';
 import ServicesPage from './ServicesPage/ServicesPage';
+import Contact from './Contact/Contact.jsx';
+
 
 // Animation Variants for Page Transitions
 const pageVariants = {
@@ -32,6 +34,7 @@ function AnimatedRoutes() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<HomePage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/Contact" element={<Contact />} />
           </Routes>
         </motion.div>
       </AnimatePresence>
