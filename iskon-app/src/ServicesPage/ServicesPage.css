@@ -2,7 +2,7 @@
 
 /* General styles for spacing and layout */
 .services-page {
-    margin-top: 100px; /* This will push the content below the navbar */
+    margin-top: 140px; /* This will push the content below the navbar */
 }
 
 .container {
@@ -14,7 +14,7 @@
 .service-area {
     font-family: 'Varela Round', sans-serif;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 140px;
 }
 
 /* Grid layout for cards with 4 items per row */
