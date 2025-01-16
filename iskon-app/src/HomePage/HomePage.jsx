@@ -1,13 +1,77 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './HomePage.css';
+import './HomePage.css'
+import carousel1 from '../Assets/carousel1.jpg'
+import carousel2 from '../Assets/carousel2.jpg'
+import carousel3 from '../Assets/carousel3.jpg'
+import carousel4 from '../Assets/carousel4.jpg'
 
 const HomePage = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const images = [
+    carousel1,
+    carousel2,
+    carousel3,
+    carousel4,
+  ];
 
-export default HomePage
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="homepage">
+      <div className="hero-container">
+        <div className="hero-content">
+          <div className="hero-text">
+            <span className="since-text">Since 2013</span>
+            <h1>Explore the history and teachings of Lord Krishna & Guru Parampara</h1>
+          </div>
+          <div className="hero-carousel">
+            {images.map((img, index) => (
+              <img
+                key={index}
+                src={img || "/placeholder.svg"}
+                alt={`Slide ${index + 1}`}
+                className={`carousel-image ${currentSlide === index ? 'active' : ''}`}
+              />
+            ))}
+            <div className="carousel-dots">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  className={`dot ${currentSlide === index ? 'active' : ''}`}
+                  onClick={() => setCurrentSlide(index)}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+        
+        <div className="stats-container">
+          <div className="stats-card">
+            <div className="stat-item">
+              <span className="stat-number">300</span>
+              <p className="stat-text">CRORE MEALS SERVED<br />AROUND THE WORLD</p>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">76+</span>
+              <p className="stat-text">CRORE MEALS SERVED<br />SINCE COVID 19 LOCKDOWN</p>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">56</span>
+              <p className="stat-text">YEARS OF SERVICE<br />TO HUMANITY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HomePage;
+
