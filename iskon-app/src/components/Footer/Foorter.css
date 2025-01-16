@@ -12,36 +12,37 @@
   
   .footer-top {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    justify-content: start;
     padding: 20px;
   }
-  .footer-logo .logo{
-    margin-left: -280px;
-  }
+  
   .footer-logo,
-  .footer-about,
   .footer-founder {
     flex: 1;
     min-width: 250px;
-    margin: 10px 15px;
+    padding: 10px;
+    font-size: larger;
+  font-weight: bolder;
   }
-  
-  .logo {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
+  .footer-logo{
+    margin-left: -200px;
   }
-  
-  .footer-logo h3 {
-    margin: 10px 0;
-    font-size: 1.5rem;
-    color: #e0e0e0;
+
+  .footer-head{
+    margin-left: -270px;
+    margin-top: 80px;
+    text-align: start;
   }
+  .footer-founder{
+    padding: 10px;
+    text-align: end;
+  }
+  .footer-founder-img{
+    margin-right: 40px;
+  }
+
   
-  .footer-logo p,
-  .footer-about p,
   .footer-founder p {
     font-size: 0.9rem;
     line-height: 1.5;
@@ -52,6 +53,27 @@
     height: auto;
     margin-top: 10px;
   }
+  .short-divider {
+    border: 1 px solid #555;
+   margin-top: 20px;
+    width: 200px;
+    margin-left: 620px;
+  }
+  
+
+  .footer-middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   justify-content: center;
+    padding: 20px;
+  }
+  .footer-about h4{
+    padding: 10px;
+    margin: 10px;
+    font-size: larger;
+    font-weight: bolder;
+  }
   
   .divider {
     border: 0.5px solid #555;
@@ -60,15 +82,34 @@
   
   .footer-bottom {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
     font-size: 0.9rem;
+    
+
   }
   
   .footer-bottom p {
     margin: 5px 0;
   }
-  
-  .footer-about{
-    margin-top: 150px;
+  .fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 2px;
+    
+    
   }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .footer-bottom img{
+    height: 30px;
+    width: 30px;
+  }
+  
