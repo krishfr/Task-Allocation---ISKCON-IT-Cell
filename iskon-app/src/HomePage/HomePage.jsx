@@ -8,6 +8,7 @@ import carousel3 from '../Assets/carousel3.jpg'
 import carousel4 from '../Assets/carousel4.jpg'
 import Schedule from './Schedule.jsx'
 import Card from './Card.jsx'
+import DonationSection from './Donation.jsx';
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -79,6 +80,8 @@ const HomePage = () => {
     </div>
       </div>
       <Card/>
+      <br />
+      <DonationSection/>
       <br />
       <Schedule/>
 
