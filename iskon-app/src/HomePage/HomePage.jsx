@@ -7,6 +7,7 @@ import carousel2 from '../Assets/carousel2.jpg'
 import carousel3 from '../Assets/carousel3.jpg'
 import carousel4 from '../Assets/carousel4.jpg'
 import Schedule from './Schedule.jsx'
+import Card from './Card.jsx'
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -77,7 +78,7 @@ const HomePage = () => {
       </div>
     </div>
       </div>
-
+      <Card/>
       <br />
       <Schedule/>
 
