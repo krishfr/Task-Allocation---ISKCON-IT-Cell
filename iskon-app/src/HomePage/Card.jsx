@@ -14,7 +14,7 @@ export default function Cards() {
 
   return (
     <div className="c">
-      <h1>What Makes Us Different</h1>
+      <h1 className='titleTable'>What Makes Us Different</h1>
       <div className="card__container">
         <article
           className={`card__article ${activeCard === 0 ? "show" : ""}`}
@@ -22,9 +22,8 @@ export default function Cards() {
         >
           <img src={Edu} alt="image" className="card__image" />
           <div className="card__data">
-            <span className="card__description">We Educate</span>
-            <h2 className="card__title">We Educate</h2>
-            <a href="" className="card__button">Read More</a>
+          <h2 className="card__title">We Educate</h2>
+            <span className="card__description">ISKCON educates 100,000+ students globally through schools and spiritual programs in 65+ countries.</span>
           </div>
         </article>
 
@@ -34,9 +33,9 @@ export default function Cards() {
         >
           <img src={Feed} alt="image" className="card__image" />
           <div className="card__data">
-            <span className="card__description">We Feed</span>
-            <h2 className="card__title">We Feed</h2>
-            <a href="" className="card__button">Read More</a>
+          <h2 className="card__title">We Feed</h2>
+            <span className="card__description">ISKCON feeds 1.2M+ people daily worldwide with sanctified vegetarian meals.</span>
+
           </div>
         </article>
 
@@ -46,9 +45,9 @@ export default function Cards() {
         >
           <img src={Celeb} alt="image" className="card__image" />
           <div className="card__data">
-            <span className="card__description">We Celebrate</span>
-            <h2 className="card__title">We Celebrate</h2>
-            <a href="" className="card__button">Read More</a>
+          <h2 className="card__title">We Celebrate</h2>
+            <span className="card__description">ISKCON unites millions across 65+ countries through festivals and spiritual events.</span>
+
           </div>
         </article>
       </div>

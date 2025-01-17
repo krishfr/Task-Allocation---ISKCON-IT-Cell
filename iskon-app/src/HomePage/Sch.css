@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif;
     background-color: #f8f1f7; /* Light pink background */
-    color: #333;
-    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background: url('../Assets/background-1.png') center/20% repeat,
+    linear-gradient(to right, #fff9f5, #fff);
+}
 
-
-h1 {
+.titleTable {
     text-align: center;
     color: #d85c8e; /* Soft pink for heading */
     margin-bottom: 70px;
@@ -50,4 +53,11 @@ h1 {
     padding: 10px;
     background-color: #fce2e3; /* Light pink background for activities */
     border-radius: 5px;
+}
+
+.vertical-divider {
+    width: 1px;
+    background-color: #dcdcdc;
+    height: 100%;
+    margin: 0 30px;
 }

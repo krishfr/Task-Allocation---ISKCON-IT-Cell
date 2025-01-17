@@ -92,13 +92,16 @@
 }
 
 .stats-container {
+  
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
   padding: 0 20px;
+  
 }
 
 .stats-card {
+  
   background: white;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -109,6 +112,7 @@
   text-align: center;
   position: relative;
   z-index: 2;
+  box-shadow: 5px 5px 15px 5px pink;
 }
 
 .stats-card::before {

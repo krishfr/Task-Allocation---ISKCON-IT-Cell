@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    font-family: 'Varela Round', sans-serif;
+}
 /* Hero Section */
 .hero {
     display: flex;
@@ -8,6 +12,7 @@
     align-items: center;
     margin-bottom: 80px;
 }
+
 
 .heading {
     font-size: 90px;
@@ -93,13 +98,14 @@
     width: 100%;
 }
 
+
+
 /* Card Data (content inside the card) */
 .card__data {
-    height: 100px;
-    width: 70%;
+    height: 150px;
+    width: 75%;
     background-color: white;
     padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
     border-radius: 1.5rem;
     position: absolute;
     bottom: -9rem;
@@ -109,7 +115,13 @@
     opacity: 0;
     transform: translateY(0);
     transition: opacity 0.3s, transform 0.3s;
+    
+    /* Combined box-shadow */
+    box-shadow: 5px 5px 15px 5px pink, 0 8px 24px hsla(0, 0%, 0%, 0.15);
+    
+    font-family: 'Varela Round', sans-serif;
 }
+
 
 /* Persistent Display After Hover */
 .card__article.show .card__data {
@@ -164,4 +176,23 @@
     .card__container {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+.card__description {
+    display: block; /* Ensures the border wraps the full content */
+    width: 104%;
+    font-size: 18px;
+    /* border: 2px solid pink; */
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /* box-shadow: 5px 5px 15px 5px pink; */
+    padding: 10px 11px 10px 10px; 
+    padding-right: 0%; 
+    border-radius: 13px;
+    box-sizing: border-box; /* Includes padding and border in the element's total width/height */
+}
+
+.card__button{
+    color: pink;
 }
