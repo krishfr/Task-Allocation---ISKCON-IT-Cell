@@ -28,7 +28,7 @@ export default function ServicesPage() {
   return (
     <div className="container services-page">
       <div className="service-area">
-        <h3>Our Services</h3>
+        <p>Our Services</p>
         {/* <p>
           Our team is dedicated to promoting a culture of collaboration, innovation, and excellence. With a passion for bringing transformative solutions to businesses, we work together to achieve success and make a positive impact on the community. Learn more about the individuals who lead the way in our mission to create meaningful change.
         </p> */}
