@@ -3,15 +3,15 @@ body {
     background-color: #f8f1f7; /* Light pink background */
     color: #333;
     margin: 0;
-}
 
-.temple-heading {
+
+h1 {
     text-align: center;
     color: #d85c8e; /* Soft pink for heading */
     margin-bottom: 70px;
 }
 
-.temple-schedule, .temple-activities {
+.schedule, .activities {
     margin: 20px auto;
     width: 90%;
     max-width: 800px;
@@ -21,30 +21,31 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.temple-schedule h2, .temple-activities h2 {
+.schedule h2, .activities h2 {
     color: #d85c8e; /* Soft pink for subheadings */
 }
 
-.temple-schedule table, .temple-activities ul {
+.schedule table, .activities ul {
     width: 100%;
+    padding: 10px;
 }
 
-.temple-schedule table {
+.schedule table {
     border-collapse: collapse;
 }
 
-.temple-schedule th, .temple-schedule td {
+.schedule th, .schedule td {
     padding: 10px;
     border: 1px solid #f1c6d1; /* Light pink border */
     text-align: center;
 }
 
-.temple-schedule th {
+.schedule th {
     background-color: #d85c8e; /* Soft pink for table header */
     color: white;
 }
 
-.temple-activities li {
+.activities li {
     margin: 10px 0;
     padding: 10px;
     background-color: #fce2e3; /* Light pink background for activities */

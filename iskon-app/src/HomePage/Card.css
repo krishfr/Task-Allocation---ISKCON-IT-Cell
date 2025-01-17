@@ -1,0 +1,167 @@
+/* Hero Section */
+.hero {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.heading {
+    font-size: 90px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.heading-text {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Background Styles */
+.bg {
+    width: 90%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    background-color: yellow;
+    opacity: 0.90;
+    border-radius: 25px;
+}
+
+/* About Section */
+.about-text {
+    font-size: 23px;
+    font-weight: 450;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    margin-right: 5px;
+}
+
+.about-heading {
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Image Styles */
+.bg-img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 4px solid blueviolet;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Card Layout and Styles */
+.c {
+    display: grid;
+    place-items: center;
+    margin-inline: auto;
+    padding-block: 5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 80px;
+}
+
+.card__container {
+    display: grid;
+    gap: 3.5rem;
+    justify-items: center;
+}
+
+/* Individual Card Styling */
+.card__article {
+    position: relative;
+    overflow: initial; /* Ensuring overflow is set to initial when not hovered */
+    width: 100%;
+    max-width: 328px;
+}
+
+.card__image {
+    height: 360px;
+    border-radius: 1.5rem;
+    width: 100%;
+}
+
+/* Card Data (content inside the card) */
+.card__data {
+    height: 100px;
+    width: 70%;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+    border-radius: 1.5rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Persistent Display After Hover */
+.card__article.show .card__data {
+    opacity: 1;
+    transform: translateY(-7rem);
+}
+
+/* Title in the card */
+.card_title {
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: .75rem;
+}
+
+/* Button styling inside the card */
+.card__button {
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    color: var(--first-color);
+}
+
+.card__button:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media screen and (max-width: 340px) {
+    .container {
+        margin-inline: 1rem;
+    }
+
+    .card__data {
+        width: 250px;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .container {
+        height: 100vh;
+    }
+
+    .card__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

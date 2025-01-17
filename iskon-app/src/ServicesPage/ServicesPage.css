@@ -14,7 +14,7 @@
 .service-area {
     font-family: 'Varela Round', sans-serif;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 140px;
 }
 
 /* Grid layout for cards with 4 items per row */
@@ -94,9 +94,4 @@
     .service-img-wraping {
         grid-template-columns: 1fr; /* 1 column on extra small screens */
     }
-}
-
-p{
-    font-size:medium;
-    font-weight: bold;
 }
