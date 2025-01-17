@@ -1,97 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-/* General styles for spacing and layout */
-.services-page {
-    margin-top: 140px; /* This will push the content below the navbar */
+/* Apply background to the entire page */
+body {
+  font-family: 'Varela Round', sans-serif;
+  background: url('../Assets/background-1.png') center/20% repeat,
+              linear-gradient(to right, #fff9f5, #fff);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensures the background covers the full page */
 }
 
+/* Container setup */
 .container {
-    max-width: 1200px;
-    margin: auto;
-    padding-bottom: 100px;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 50px; /* Reduced bottom padding */
 }
 
+/* Service Area Section */
 .service-area {
-    font-family: 'Varela Round', sans-serif;
-    text-align: center;
-    margin-top: 140px;
+  text-align: center;
+  margin-top: 20px; /* Reduced space */
+  padding: 40px 20px; /* Reduced padding */
 }
 
-/* Grid layout for cards with 4 items per row */
+.service-area h4 {
+    margin-top: 10px;
+  font-size: 1.5rem;
+  color: #2F4F4F; /* DarkSlateGray for a more muted, sophisticated tone */
+  margin-bottom: 12px; /* Reduced margin */
+  line-height: 1.5;
+  font-weight: bold; /* Makes the text bold */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-area p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Service Image and Card Layout */
 .service-img-wraping {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
-    gap: 30px; /* Increased space between cards */
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Ensures 4 columns per row */
+  gap: 20px; /* Reduced space between cards */
+  margin-top: 20px;
+  padding: 0 20px;
 }
 
 .card {
-    display: flex; /* Enable flexbox for vertical alignment */
-    flex-direction: column; /* Arrange items vertically */
-    justify-content: space-between; /* Ensure buttons stay at the bottom */
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Bigger shadow for more emphasis */
-    border-radius: 12px; /* Slightly more rounded corners */
-    overflow: hidden;
-    transition: transform 0.3s ease; /* Added a transition for smooth scaling effect */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Reduced radius for a sharper card edge */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Reduced shadow for a cleaner look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Slightly enlarge the card on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.card-img-top {
-    width: 100%;
-    height: 200px; /* Increased image height */
-    object-fit: cover; /* Ensures the image fills the space without distorting */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Team Content Section */
 .team-content {
-    padding: 25px; /* Increased padding for more space */
-    flex-grow: 1; /* Ensures the text section grows to fill space */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding: 15px 10px; /* Reduced padding */
+  text-align: center;
+  background: linear-gradient(180deg, #fff 60%, #f9f9f9);
+  border-top: 1px solid #eee;
+  border-radius: 0 0 10px 10px; /* Reduced radius */
+  min-height: 180px; /* Reduced minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .team-content h5 {
-    font-size: 18px; /* Increased font size for the title */
-    margin-top: 20px;
-    margin-bottom: 30px; /* Increased space between title and button */
+  font-size: 1.1rem;
+  color: #2F2424;
+  margin-bottom: 8px; /* Reduced margin */
+  font-weight: 600;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.service-description {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 0.95rem;
+  color: #2F4F4F;
+  margin: 8px 0; /* Reduced margin */
+  line-height: 1.5;
+  text-align: justify;
+  height: 50px; /* Reduced height */
+  overflow: hidden; /* Prevents overflow if the description is too long */
+}
+
+/* Button Styles */
 .btn {
-    text-decoration: none;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px; /* Increased padding for a larger button */
-    border-radius: 8px; /* Slightly more rounded button */
-    font-size: 16px; /* Increased button text size */
-    transition: background-color 0.3s;
+  margin-top: 8px; /* Reduced margin */
+  text-decoration: none;
+  background-color: #ff4d6d;
+  color: #fff;
+  padding: 8px 18px; /* Reduced padding */
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+  background-color: #e03e5b;
 }
 
-/* Make the grid responsive */
+/* Responsive Styles */
 @media (max-width: 1024px) {
-    .service-img-wraping {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
-    }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-carousel {
+    width: 100%;
+    height: 400px;
+  }
+
+  .stats-card {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 768px) {
-    .service-img-wraping {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
-    }
-}
+  .service-description {
+    font-size: 0.85rem;
+    text-align: center;
+  }
 
-@media (max-width: 480px) {
-    .service-img-wraping {
-        grid-template-columns: 1fr; /* 1 column on extra small screens */
-    }
+  .service-area h4 {
+    font-size: 1.25rem;
+  }
+
+  .service-img-wraping {
+    grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+  }
 }
