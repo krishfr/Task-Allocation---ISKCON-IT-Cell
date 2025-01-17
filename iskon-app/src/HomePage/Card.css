@@ -70,13 +70,15 @@ body{
 /* Card Layout and Styles */
 .c {
     display: grid;
+    /* background: url('../Assets/aesthetic.png') no-repeat center center; */
+    background-size: cover; /* or 'contain' depending on your need */
     place-items: center;
     margin-inline: auto;
     padding-block: 5rem;
     width: 100%;
-    max-width: 1200px;
     margin-bottom: 80px;
 }
+
 
 .card__container {
     display: grid;
