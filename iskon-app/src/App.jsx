@@ -1,3 +1,4 @@
+// src/App.jsx
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
@@ -6,8 +7,9 @@ import HomePage from './HomePage/HomePage';
 import Navbar from './components/Navbar/Navbar';
 import ServicesPage from './ServicesPage/ServicesPage';
 import Contact from './Contact/Contact.jsx';
-import Footer from "./components/Footer/Footer.jsx"
-
+import Footer from './components/Footer/Footer.jsx';
+import LoginForm from './components/Login/loginPage.jsx';
+import SignupForm from './components/Login/SignupForm.jsx'; // Update the path to SignupForm
 
 // Animation Variants for Page Transitions
 const pageVariants = {
@@ -35,11 +37,13 @@ function AnimatedRoutes() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<HomePage />} />
             <Route path="/services" element={<ServicesPage />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<LoginForm />} />
+            <Route path="/signup" element={<SignupForm />} /> {/* Add SignupForm route */}
           </Routes>
         </motion.div>
       </AnimatePresence>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
