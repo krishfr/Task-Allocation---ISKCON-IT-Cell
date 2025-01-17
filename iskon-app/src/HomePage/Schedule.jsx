@@ -4,10 +4,11 @@ import './Sch.css';
 export default function Schedule() {
   return (
     <div>
-        <h1>Temple Schedule & Activities</h1>
+        <h1 className='titleTable'>Temple Schedule & Activities</h1>
 
         <div className="schedule">
             <h2>Temple Opening & Closing Schedule</h2>
+            
             <br />
             <table className="schedule-table">
                 <thead>
