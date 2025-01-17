@@ -6,6 +6,7 @@ import carousel1 from '../Assets/carousel1.jpg'
 import carousel2 from '../Assets/carousel2.jpg'
 import carousel3 from '../Assets/carousel3.jpg'
 import carousel4 from '../Assets/carousel4.jpg'
+import Schedule from './Schedule.jsx'
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -76,6 +77,10 @@ const HomePage = () => {
       </div>
     </div>
       </div>
+
+      <br />
+      <Schedule/>
+
     </div>
   );
 };
