@@ -11,16 +11,17 @@ body {
 }
 
 /* Container setup */
-.container {
+.container-ser {
   max-width: 1200px;
   margin: auto;
-  padding-bottom: 50px; /* Reduced bottom padding */
+  padding-bottom: 100px; /* Reduced bottom padding */
+
 }
 
 /* Service Area Section */
 .service-area {
   text-align: center;
-  margin-top: 20px; /* Reduced space */
+  margin-top: 30px; /* Reduced space */
   padding: 40px 20px; /* Reduced padding */
 }
 

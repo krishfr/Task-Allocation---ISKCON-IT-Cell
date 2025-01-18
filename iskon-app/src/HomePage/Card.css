@@ -70,13 +70,15 @@ body{
 /* Card Layout and Styles */
 .c {
     display: grid;
+    /* background: url('../Assets/aesthetic.png') no-repeat center center; */
+    background-size: cover; /* or 'contain' depending on your need */
     place-items: center;
     margin-inline: auto;
     padding-block: 5rem;
-    width: 100%;
-    max-width: 1200px;
-    margin-bottom: 80px;
+    width: 90%;
+    margin-bottom: 30px;
 }
+
 
 .card__container {
     display: grid;
@@ -93,7 +95,7 @@ body{
 }
 
 .card__image {
-    height: 360px;
+    height: 320px;
     border-radius: 1.5rem;
     width: 100%;
 }
@@ -193,6 +195,8 @@ body{
     box-sizing: border-box; /* Includes padding and border in the element's total width/height */
 }
 
-.card__button{
-    color: pink;
+.titleCard{
+    color: #ff4d6d;
+    margin-bottom: 30px;
+
 }

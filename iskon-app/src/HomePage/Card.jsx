@@ -15,11 +15,12 @@ export default function Cards() {
 
   return (
     <div className="c">
-      <h1 className='titleTable'>What Makes Us Different</h1>
+      <h1 className='titleCard'>What Makes Us Different</h1>
       <div className="card__container">
         <article
           className={`card__article ${activeCard === 0 ? "show" : ""}`}
           onMouseEnter={() => handleMouseEnter(0)}
+          style={{marginLeft:"5px"}}
         >
           <img src={Edu} alt="image" className="card__image" />
           <div className="card__data">
@@ -55,6 +56,7 @@ export default function Cards() {
         <article
           className={`card__article ${activeCard === 3 ? "show" : ""}`}
           onMouseEnter={() => handleMouseEnter(3)}
+          style={{marginRight:"5px"}}
         >
           <img src={Help} alt="image" className="card__image" />
           <div className="card__data">

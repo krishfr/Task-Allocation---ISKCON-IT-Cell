@@ -43,10 +43,10 @@ export default function ServicesPage() {
   };
 
   return (
-    <div className="container services-page">
+    <div className="container-ser services-page">
       <div className="service-area">
         <h4>Our Services</h4>
-        <p>The Sri Sri Krishna Balaram Mandir stands as a beacon of spiritual devotion, embodying the timeless pastimes of Krishna and Balaram in their eternal playground. This magnificent temple symbolizes the realization of a visionary dream to create a sanctuary of unparalleled beauty, dedicated to the worship of these divine brothers. It holds deep significance for devotees, offering a place where their transcendental presence is celebrated and remembered.</p>
+        {/* <p>The Sri Sri Krishna Balaram Mandir stands as a beacon of spiritual devotion, embodying the timeless pastimes of Krishna and Balaram in their eternal playground. This magnificent temple symbolizes the realization of a visionary dream to create a sanctuary of unparalleled beauty, dedicated to the worship of these divine brothers. It holds deep significance for devotees, offering a place where their transcendental presence is celebrated and remembered.</p> */}
         <div className="service-img-wraping">
           {teamImages.map((image, index) => (
             <div
