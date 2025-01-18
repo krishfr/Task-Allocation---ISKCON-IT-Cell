@@ -15,13 +15,13 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-brand">
-        <img src={navbarlogo || '/placeholder.svg'} alt="ISKCON Logo" className="navbar-logo" />
-        <div className="brand-text">
-          <h1>ISKCON</h1>
-          <p>International Society for Krishna Consciousness</p>
-        </div>
-      </div>
+  <a href="/" className="navbar-brand" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <img src={navbarlogo || '/placeholder.svg'} alt="ISKCON Logo" className="navbar-logo" />
+    <div className="brand-text">
+      <h1>ISKCON</h1>
+      <p>International Society for Krishna Consciousness</p>
+    </div>
+  </a>
 
       <div className="nav-links">
         <Link to="/" className="nav-link">Home</Link>

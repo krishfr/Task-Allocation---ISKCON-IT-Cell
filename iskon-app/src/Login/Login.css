@@ -1,0 +1,130 @@
+/* Login.css */
+.login-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 181px;
+  }
+  
+  .login-columns {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .login-column {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .login-form, .signup-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 3px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .mobile-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .country-code {
+    width: 120px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+  }
+  
+  .next-button, .signup-button {
+    width: 100%;
+    padding: 12px;
+    background: #6b46c1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 16px 0;
+  }
+  
+  .next-button:hover, .signup-button:hover {
+    background: #553c9a;
+  }
+  
+  .otp-button {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    color: #6b46c1;
+    border: 1px solid #6b46c1;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 16px 0;
+  }
+  
+  .form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  
+  .create-account, .reset-link, .login-link {
+    color: #6b46c1;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+  }
+  
+  .google-button {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .google-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-columns {
+      flex-direction: column;
+    }
+    
+    .login-column {
+      max-width: 100%;
+    }
+  }
