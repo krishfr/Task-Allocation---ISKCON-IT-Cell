@@ -1,61 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
-/* Apply background to the entire page */
+/* General Styles */
 body {
   font-family: 'Varela Round', sans-serif;
   background: url('../Assets/background-1.png') center/20% repeat,
               linear-gradient(to right, #fff9f5, #fff);
   margin: 0;
   padding: 0;
-  min-height: 100vh; /* Ensures the background covers the full page */
+  min-height: 100vh;
 }
 
-/* Container setup */
+/* Container */
 .container-ser {
   max-width: 1200px;
   margin: auto;
-  padding-bottom: 100px; /* Reduced bottom padding */
-
+  padding-bottom: 100px;
 }
 
-/* Service Area Section */
+/* Service Area */
 .service-area {
   text-align: center;
-  margin-top: 30px; /* Reduced space */
-  padding: 40px 20px; /* Reduced padding */
+  margin-top: 30px;
+  padding: 40px 20px;
 }
 
 .service-area h4 {
-    margin-top: 10px;
+  margin-top: 13px;
   font-size: 1.5rem;
-  color: #2F4F4F; /* DarkSlateGray for a more muted, sophisticated tone */
-  margin-bottom: 12px; /* Reduced margin */
-  line-height: 1.5;
-  font-weight: bold; /* Makes the text bold */
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  color: #2F4F4F;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-.service-area p {
-  margin-top: 10px;
-  font-size: 1rem;
-}
-
-/* Service Image and Card Layout */
+/* Grid Setup */
 .service-img-wraping {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Ensures 4 columns per row */
-  gap: 20px; /* Reduced space between cards */
-  margin-top: 20px;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px; /* Gap between columns and rows */
+  row-gap: 50px; /* Space between rows of cards */
+  margin-top: 28px;
   padding: 0 20px;
 }
 
+/* Cards */
 .card {
   position: relative;
   overflow: hidden;
-  border-radius: 10px; /* Reduced radius for a sharper card edge */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Reduced shadow for a cleaner look */
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: #ffffff;
 }
@@ -76,48 +66,36 @@ body {
   transform: scale(1.05);
 }
 
-/* Team Content Section */
+/* Content */
 .team-content {
-  padding: 15px 10px; /* Reduced padding */
+  padding: 15px 10px;
   text-align: center;
   background: linear-gradient(180deg, #fff 60%, #f9f9f9);
   border-top: 1px solid #eee;
-  border-radius: 0 0 10px 10px; /* Reduced radius */
-  min-height: 180px; /* Reduced minimum height */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
 }
 
 .team-content h5 {
   font-size: 1.1rem;
   color: #2F2424;
-  margin-bottom: 8px; /* Reduced margin */
+  margin-bottom: 8px;
   font-weight: 600;
-  min-height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .service-description {
-  font-family: 'Varela Round', sans-serif;
   font-size: 0.95rem;
   color: #2F4F4F;
-  margin: 8px 0; /* Reduced margin */
+  margin: 8px 0 20px 0;  /* Increased margin-bottom for spacing */
   line-height: 1.5;
-  text-align: justify;
-  height: 50px; /* Reduced height */
-  overflow: hidden; /* Prevents overflow if the description is too long */
 }
 
-/* Button Styles */
+/* Button */
 .btn {
-  margin-top: 8px; /* Reduced margin */
+  margin-top: 10px;
   text-decoration: none;
   background-color: #ff4d6d;
   color: #fff;
-  padding: 8px 18px; /* Reduced padding */
+  padding: 8px 18px;
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 600;
@@ -128,39 +106,20 @@ body {
   background-color: #e03e5b;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-text h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-carousel {
-    width: 100%;
-    height: 400px;
-  }
-
-  .stats-card {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
-
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .service-description {
-    font-size: 0.85rem;
-    text-align: center;
+  .service-img-wraping {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    row-gap: 30px;
+    padding: 0 10px;  /* Reduced padding to fit better on smaller screens */
   }
 
   .service-area h4 {
-    font-size: 1.25rem;
+    font-size: 1.2rem; /* Adjust the font size for smaller screens */
+    margin-bottom: 10px; /* Ensure some space below the heading */
   }
 
-  .service-img-wraping {
-    grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+  .team-content h5 {
+    font-size: 1rem;
   }
 }
