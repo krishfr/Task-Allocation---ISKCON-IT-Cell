@@ -4,6 +4,7 @@ import './Sch.css';
 export default function Schedule() {
   return (
     <div>
+
         <div className="section">
     
                 </div>
@@ -13,6 +14,8 @@ export default function Schedule() {
                 <div className="section">
 
         </div>
+
+
 
         <h1 className='titleTable'>Temple Schedule & Activities</h1>
 

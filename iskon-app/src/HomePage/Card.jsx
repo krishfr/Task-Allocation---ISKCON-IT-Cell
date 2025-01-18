@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Edu from "../Assets/cards/edu.jpg";
 import Feed from "../Assets/cards/feed.jpg";
 import Celeb from "../Assets/cards/celebrate.jpg";
+import Help from "../Assets/cards/Help1.webp";
 import "./card.css";
 
 export default function Cards() {
@@ -50,6 +51,20 @@ export default function Cards() {
 
           </div>
         </article>
+
+        <article
+          className={`card__article ${activeCard === 3 ? "show" : ""}`}
+          onMouseEnter={() => handleMouseEnter(3)}
+        >
+          <img src={Help} alt="image" className="card__image" />
+          <div className="card__data">
+          <h2 className="card__title">We Help</h2>
+            <span className="card__description" style={{width:"110%"}}>ISKCON fosters community and supports spiritual growth among its followers.</span>
+
+          </div>
+        </article>
+
+        
       </div>
     </div>
   );

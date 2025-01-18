@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* Apply background to the entire page */
+body {
+  font-family: 'Varela Round', sans-serif;
+  background: url('../Assets/background-1.png') center/20% repeat,
+              linear-gradient(to right, #fff9f5, #fff);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensures the background covers the full page */
+}
+
+/* Container setup */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 50px; /* Reduced bottom padding */
+}
+
+/* Service Area Section */
+.service-area {
+  text-align: center;
+  margin-top: 20px; /* Reduced space */
+  padding: 40px 20px; /* Reduced padding */
+}
+
+.service-area h4 {
+    margin-top: 10px;
+  font-size: 1.5rem;
+  color: #2F4F4F; /* DarkSlateGray for a more muted, sophisticated tone */
+  margin-bottom: 12px; /* Reduced margin */
+  line-height: 1.5;
+  font-weight: bold; /* Makes the text bold */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-area p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Service Image and Card Layout */
+.service-img-wraping {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Ensures 4 columns per row */
+  gap: 20px; /* Reduced space between cards */
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Reduced radius for a sharper card edge */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Reduced shadow for a cleaner look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Team Content Section */
+.team-content {
+  padding: 15px 10px; /* Reduced padding */
+  text-align: center;
+  background: linear-gradient(180deg, #fff 60%, #f9f9f9);
+  border-top: 1px solid #eee;
+  border-radius: 0 0 10px 10px; /* Reduced radius */
+  min-height: 180px; /* Reduced minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.team-content h5 {
+  font-size: 1.1rem;
+  color: #2F2424;
+  margin-bottom: 8px; /* Reduced margin */
+  font-weight: 600;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-description {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 0.95rem;
+  color: #2F4F4F;
+  margin: 8px 0; /* Reduced margin */
+  line-height: 1.5;
+  text-align: justify;
+  height: 50px; /* Reduced height */
+  overflow: hidden; /* Prevents overflow if the description is too long */
+}
+
+/* Button Styles */
+.btn {
+  margin-top: 8px; /* Reduced margin */
+  text-decoration: none;
+  background-color: #ff4d6d;
+  color: #fff;
+  padding: 8px 18px; /* Reduced padding */
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e03e5b;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-carousel {
+    width: 100%;
+    height: 400px;
+  }
+
+  .stats-card {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-description {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .service-area h4 {
+    font-size: 1.25rem;
+  }
+
+  .service-img-wraping {
+    grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+  }
+}
