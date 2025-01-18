@@ -5,6 +5,7 @@ import navbarlogo from '../../assets/navbarlogo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState({});
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleDropdown = (menu) => {
     setIsOpen((prev) => ({
@@ -13,20 +14,31 @@ const Navbar = () => {
     }));
   };
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen((prev) => !prev);
+  };
+
   return (
     <nav className="navbar">
-  <a href="/" className="navbar-brand" style={{ textDecoration: 'none', color: 'inherit' }}>
-    <img src={navbarlogo || '/placeholder.svg'} alt="ISKCON Logo" className="navbar-logo" />
-    <div className="brand-text">
-      <h1>ISKCON</h1>
-      <p>International Society for Krishna Consciousness</p>
-    </div>
-  </a>
+      <a href="/" className="navbar-brand" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <img src={navbarlogo || '/placeholder.svg'} alt="ISKCON Logo" className="navbar-logo" />
+        <div className="brand-text">
+          <h1>ISKCON</h1>
+          <p>International Society for Krishna Consciousness</p>
+        </div>
+      </a>
 
-      <div className="nav-links">
+      {/* Hamburger Icon */}
+      <div className="hamburger" onClick={toggleMobileMenu}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+
+      <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
         <Link to="/" className="nav-link">Home</Link>
 
-        <div className="dropdown">
+        {/* <div className="dropdown">
           <div
             className="nav-link"
             onMouseEnter={() => toggleDropdown('about')}
@@ -41,7 +53,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-        </div>
+        </div> */}
 
         <div className="dropdown">
           <div
@@ -66,6 +78,8 @@ const Navbar = () => {
         <Link to="/donate" className="nav-link">Donate</Link>
         <Link to="/contact" className="nav-link">Contact</Link>
         <Link to="/login" className="nav-link">Login</Link>
+        <Link to="/about" className="nav-link">About</Link>
+        
       </div>
     </nav>
   );

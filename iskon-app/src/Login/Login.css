@@ -1,10 +1,8 @@
 /* Login.css */
 .login-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    padding-top: 100px;
-    padding-bottom: 181px;
+  z-index: 1; /* Keep it below the navbar and footer */
+  margin-top: 100px; /* Add margin to avoid overlap with navbar */
+  margin-bottom: 200px; /* Add margin to avoid overlap with footer */
   }
   
   .login-columns {
@@ -94,7 +92,7 @@
     text-decoration: none;
   }
   
-  .divider {
+  .divider123 {
     text-align: center;
     margin: 20px 0;
     color: #666;

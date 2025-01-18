@@ -8,6 +8,7 @@ import ServicesPage from './ServicesPage/ServicesPage';
 import Contact from './Contact/Contact.jsx';
 import Footer from "./components/Footer/Footer.jsx"
 import Login from './Login/Login.jsx';
+import About from './About/About.jsx';
 
 // Animation Variants for Page Transitions
 const pageVariants = {
@@ -37,6 +38,7 @@ function AnimatedRoutes() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </motion.div>
       </AnimatePresence>
