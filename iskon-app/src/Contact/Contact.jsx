@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Link } from 'react-router-dom';
 import './Contact.css';
 
@@ -153,7 +153,7 @@ const Contact = () => {
     <input type="text" id="subject" />
     
     <label htmlFor="message">Your Message</label>
-    <textarea id="message" rows="4"></textarea>
+    <textarea id="message" rows="4" required></textarea>
     
     <button type="submit" id="btn">Send</button>
   </form>

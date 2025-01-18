@@ -38,16 +38,16 @@ export default function Footer() {
       <p>© {new Date().getFullYear()} ISKCON. All Rights Reserved.</p>
       
       <div className="footer-socials">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon" data-name="Facebook" >
               <FacebookIcon />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon" data-name="Twitter" >
               <TwitterIcon />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon" data-name="Instagram" >
               <InstagramIcon />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social-icon" data-name="YouTube" >
               <YouTubeIcon />
             </a>
           </div>
