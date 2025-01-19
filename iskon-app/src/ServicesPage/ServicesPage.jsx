@@ -43,9 +43,23 @@ export default function ServicesPage() {
   };
 
   return (
-    <div className="container-ser services-page">
       <div className="service-area">
         <h4>Our Services</h4>
+        <div className="container-ser services-page">
+        <div className="video-container">
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/f5HP0vcGZbE?si=YdauJdhLU7gwbD_v&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;modestbranding=1&amp;showinfo=0"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</div>
+
+
         <div className="service-img-wraping">
           {teamImages.map((image, index) => (
             <div
@@ -54,7 +68,7 @@ export default function ServicesPage() {
               onMouseEnter={() => handleMouseEnter(index)}
             >
               <img
-                src={image}
+                src={image || "/placeholder.svg"}
                 alt={`Service ${index + 1}`}
                 className="card-img-top"
               />

@@ -15,6 +15,23 @@ body {
   padding-bottom: 100px;
 }
 
+/* Video Container */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px 5px pink;
+}
+
 /* Service Area */
 .service-area {
   text-align: center;
@@ -121,5 +138,23 @@ body {
 
   .team-content h5 {
     font-size: 1rem;
+  }
+
+  .video-container {
+    padding: 10px;
+  }
+
+  .video-container iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-img-wraping {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+
+  .video-container iframe {
+    height: 200px;
   }
 }
