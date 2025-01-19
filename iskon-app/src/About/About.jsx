@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import about from "../Assets/about.jpeg";
+import BgImage from "./design-manadal1.png"
 
 const AboutPage = () => {
   return (
@@ -11,6 +12,7 @@ const AboutPage = () => {
       </header>
 
       <div className="container-about-market">
+        <img src={BgImage} alt="image" className="bgImage"/>
         <div className="featurette">
           <div className="text-content">
             <h2 className="featurette-heading-about">

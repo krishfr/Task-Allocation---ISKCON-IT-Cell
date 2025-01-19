@@ -55,7 +55,7 @@ const Navbar = () => {
           </div>
         </div> */}
 
-        <div className="dropdown">
+        {/* <div className="dropdown">
           <div
             className="nav-link"
             onMouseEnter={() => toggleDropdown('temple')}
@@ -72,13 +72,13 @@ const Navbar = () => {
               </div>
             )}
           </div>
-        </div>
+        </div> */}
 
         <Link to="/services" className="nav-link">Services</Link>
-        <Link to="/donate" className="nav-link">Donate</Link>
+        {/* <Link to="/donate" className="nav-link">Donate</Link> */}
         <Link to="/contact" className="nav-link">Contact</Link>
-        <Link to="/login" className="nav-link">Login</Link>
         <Link to="/about" className="nav-link">About</Link>
+        <Link to="/login" className="nav-link">Login</Link>
         
       </div>
     </nav>
