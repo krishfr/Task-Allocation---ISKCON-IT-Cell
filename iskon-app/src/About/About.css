@@ -1,23 +1,22 @@
-body.about-page {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    font-family: 'Varela Round', sans-serif;
+}
   .header-about {
     background-image: url('hero-image.jpg');
     background-size: cover;
     background-position: center;
     color: rgb(190, 48, 48);
     text-align: center;
-    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 220px;
   }
   
   .header-about h1 {
     font-size: 3em;
-    margin: 0;
+    margin-top: 100px;
   }
   
   .header-about p {
@@ -40,18 +39,49 @@ body.about-page {
   }
   
   .featurette {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+    padding: 20px; 
+    text-align: justify; 
+    margin-bottom: 50px;
+    margin-top: 0;
   }
   
+  .content-container {
+    display: flex; 
+    max-width: 1200px; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+  }
+  
+
   .text-content {
-    width: 60%;
+    background-image: url();
+    flex: 1; 
+    align-items: center; 
+    padding: 20px; 
+    max-width: 800px; 
+  }
+
+  .lead-about{
+    font-size: 20px;
+  }
+  .image-content {
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
   
-  .image-content {
-    width: 35%;
+  .image-content img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px; 
   }
+  
+  
   
   .featurette-image {
     max-width: 100%;
@@ -68,11 +98,13 @@ body.about-page {
     overflow: hidden;
     background-color: #ffffff;
     border-radius: 10px;
+    padding: 20px;
   }
   
   .scrolling-text-about {
+   
     display: inline-block;
-    font-size: 20px;
+    font-size: 30px;
     color: #444;
     white-space: nowrap;
     animation: scroll-about 9s linear infinite;
@@ -88,27 +120,48 @@ body.about-page {
   }
   
   .about-section {
+    display: flex; 
+    flex-direction:column; 
+    align-items: center; 
+    justify-content: center;
     background: #ffe4c4;
     padding: 40px 20px;
     text-align: center;
+
+    
   }
   
   .about-section h2 {
     color: #2c3e50;
+    font-size: 40px;
     margin-bottom: 20px;
+    
+  }
+
+  .about-section-text{
+    text-align: center;
+    font-weight: 500;
+     font-size: 20px;
+     margin-left: 350px;
+     margin-right: 400px;
+     margin-bottom: 20px;
   }
   
   .mission-section-about {
     padding: 40px 20px;
     background: #f4f4f4;
     text-align: center;
+    font-size: 20px;
   }
-  
+  .mission-section-about h2{
+    font-size: 40px;
+  }
   .mission-cards-about {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    box-shadow: 0 1px 2.5px #ffe4c4;
   }
   
   .card-about {
@@ -117,8 +170,10 @@ body.about-page {
     border-radius: 8px;
     padding: 20px;
     width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 4px 10px #ffe4c4;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 13px;
+    margin-bottom: 30px;
   }
   
   .card-about:hover {
@@ -129,6 +184,7 @@ body.about-page {
   
   .custom-btn-about {
     background-color: #e67e22;
+    font-size: 40px;
     color: white;
     padding: 10px 20px;
     margin: 10px;

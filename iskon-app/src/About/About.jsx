@@ -55,7 +55,7 @@ const AboutPage = () => {
 
       <section className="about-section">
         <h2>Who We Are</h2>
-        <p>
+        <p className="about-section-text">
           The International Society for Krishna Consciousness (ISKCON), also known
           as the Hare Krishna movement, is a spiritual organization founded by A.C.
           Bhaktivedanta Swami Prabhupada in 1966. ISKCON aims to promote the teachings
