@@ -3,142 +3,132 @@ import './Dashboard.css';
 import Dheader from '../Component/Dheader/Dheader';
 import Sidebar from '../Component/Sidebar/Sidebar';
 
-const AdminDashboard = () => {
+export default function AdminDashboard() {
   const servicesAllocated = [
     {
-      id: 1,
-      dateRange: "January 10, 2024 - July 30, 2024",
-      name: "24 Hours Kirtan Dept.",
+      title: "24 Hours Kirtan Dept.",
       location: "Main Hall",
-      status: "Denied"
+      status: "Denied",
+      statusColor: "bg-red-600",
+      date: "January 10, 2024 - July 30, 2024",
     },
     {
-      id: 2,
-      dateRange: "January 10, 2024 - July 30, 2024",
-      name: "Pilgrimage Coordinator",
+      title: "Pilgrimage Coordinator",
       location: "Verandah",
-      status: "Pending"
+      status: "Pending",
+      statusColor: "bg-orange-500",
+      date: "January 10, 2024 - July 30, 2024",
     },
     {
-      id: 3,
-      dateRange: "March 20, 2023 - August 20, 2024",
-      name: "Deity Worship",
+      title: "Deity Worship",
       location: "Garbhagriha",
-      status: "Ongoing"
+      status: "Ongoing",
+      statusColor: "bg-teal-600",
+      date: "March 20, 2023 - August 20, 2024",
     },
     {
-      id: 4,
-      dateRange: "March 20, 2023 - August 20, 2024",
-      name: "Cleaning & Maintenance",
+      title: "Cleaning & Maintenance",
       location: "Hall Way",
-      status: "Accepted"
-    }
-  ];
+      status: "Accepted",
+      statusColor: "bg-green-500",
+      date: "March 20, 2023 - August 20, 2024",
+    },
+  ]
 
   const remainingServices = [
     {
-      id: 5,
-      dateRange: "January 10, 2024 - July 30, 2024",
-      name: "Serving Meals",
+      title: "Serving Meals",
       location: "Kitchen",
-      status: "Accepted"
+      status: "Accepted",
+      statusColor: "bg-green-500",
+      date: "January 10, 2024 - July 30, 2024",
     },
     {
-      id: 6,
-      dateRange: "January 10, 2024 - July 30, 2024",
-      name: "Book Distribution",
+      title: "Book Distribution",
       location: "Verandah",
-      status: "Ongoing"
+      status: "Ongoing",
+      statusColor: "bg-teal-600",
+      date: "January 10, 2024 - July 30, 2024",
     },
     {
-      id: 7,
-      dateRange: "March 20, 2023 - August 20, 2024",
-      name: "Fundraising Campaigns",
+      title: "Fundraising Campaigns",
       location: "Verandah",
-      status: "Pending"
+      status: "Pending",
+      statusColor: "bg-orange-500",
+      date: "March 20, 2023 - August 20, 2024",
     },
     {
-      id: 8,
-      dateRange: "March 20, 2023 - August 20, 2024",
-      name: "Food Distribution",
+      title: "Food Distribution",
       location: "In an location",
-      status: "Denied"
-    }
-  ];
+      status: "Denied",
+      statusColor: "bg-red-600",
+      date: "March 20, 2023 - August 20, 2024",
+    },
+  ]
 
   return (
-    <>
-    
-    <div className="dashboard-container">
-    <Sidebar />
-      <div className="main-content">
+    <div className="dashboard">
+      <Sidebar />
+      <main className="main-content">
         <Dheader />
-        <div className="dashboard-content">
-          <div className="services-overview">
-            <div className="services-header">
-              <h2>Services</h2>
-              <span className="date">20 Jan 2025</span>
+        <div className="services-section">
+          <div className="services-header">
+            <h2>Services</h2>
+            <p>20 Jan 2025</p>
+          </div>
+          <div className="services-stats">
+            <div>
+              <span className="stat-value">6</span>
+              <p className="stat-label">In Progress</p>
             </div>
-            <div className="services-stats">
-              <div className="stat-item">
-                <h3>6</h3>
-                <p>In Progress</p>
-              </div>
-              <div className="stat-divider"></div>
-              <div className="stat-item">
-                <h3>8</h3>
-                <p>Upcoming</p>
-              </div>
-              <div className="stat-divider"></div>
-              <div className="stat-item">
-                <h3>2</h3>
-                <p>On Hold</p>
-              </div>
+            <div>
+              <span className="stat-value">8</span>
+              <p className="stat-label">Upcoming</p>
             </div>
-            <div className="service-actions">
-              <button className="btn-add">Add Service</button>
-              <button className="btn-remove">Remove Service</button>
+            <div>
+              <span className="stat-value">2</span>
+              <p className="stat-label">On Hold</p>
             </div>
           </div>
-
-          <section className="services-section">
-            <h2>Services Allocated</h2>
-            <div className="services-grid">
-              {servicesAllocated.map(service => (
-                <ServiceCard key={service.id} {...service} />
-              ))}
-            </div>
-          </section>
-
-          <section className="services-section">
-            <h2>Remaining Services</h2>
-            <div className="services-grid">
-              {remainingServices.map(service => (
-                <ServiceCard key={service.id} {...service} />
-              ))}
-            </div>
-          </section>
+          <div className="services-actions">
+            <button className="button button-green">Add Service</button>
+            <button className="button button-teal">Remove Service</button>
+          </div>
         </div>
-      </div>
+        <section className="services-allocated">
+          <h2 className="section-title">Services Allocated</h2>
+          <div className="services-grid">
+            {servicesAllocated.map((service, index) => (
+              <div key={index} className="service-card">
+                <p className="service-date">{service.date}</p>
+                <h3 className="service-title">{service.title}</h3>
+                <p className="service-location">{service.location}</p>
+                <div className="service-status">
+                  <span className="status-label">Status</span>
+                  <span className={`status-badge ${service.statusColor}`}>{service.status}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="remaining-services">
+          <h2 className="section-title">Remaining Services</h2>
+          <div className="services-grid">
+            {remainingServices.map((service, index) => (
+              <div key={index} className="service-card">
+                <p className="service-date">{service.date}</p>
+                <h3 className="service-title">{service.title}</h3>
+                <p className="service-location">{service.location}</p>
+                <div className="service-status">
+                  <span className="status-label">Status</span>
+                  <span className={`status-badge ${service.statusColor}`}>{service.status}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
     </div>
-    </>
-  );
-};
+  )
+}
 
-
-
-
-
-const ServiceCard = ({ dateRange, name, location, status }) => (
-  <div className="service-card">
-    <p className="date-range">{dateRange}</p>
-    <h3 className="service-name">{name}</h3>
-    <p className="location">{location}</p>
-    <div className="status-section">
-      <span className="status-label">Status</span>
-      <span className={`status-badge ${status.toLowerCase()}`}>{status}</span>
-    </div>
-  </div>
-);
-
-export default AdminDashboard;

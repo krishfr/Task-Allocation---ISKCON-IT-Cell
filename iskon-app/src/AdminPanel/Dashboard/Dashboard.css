@@ -1,159 +1,156 @@
-.dashboard-container {
-    display: flex;
-    min-height: 100vh;
-    background-color: #f5f5f5;
-    font-family: Arial, sans-serif;
-   
-  }
-  
-  
-  
-  .main-content {
-    flex: 1;
-    padding: 20px;
-    width: 100%;
-  }
-  
-  
-  .logo {
-    height: 40px;
-  }
-  
- 
-  .notification-icons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .notification {
-    background-color: #4CAF50;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 15px;
-  }
-  
-  .services-overview {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
-  }
-  
-  .services-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .services-stats {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .stat-item {
-    text-align: center;
-    flex: 1;
-  }
-  
-  .stat-item h3 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .stat-divider {
-    width: 1px;
-    height: 40px;
-    background-color: #ddd;
-  }
-  
-  .service-actions {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-  }
-  
-  .btn-add {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn-remove {
-    background-color: #2D8B86;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .services-section {
-    margin-bottom: 30px;
-  }
-  
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .service-card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .date-range {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  .service-name {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .location {
-    color: #666;
-    margin-bottom: 15px;
-  }
-  
-  .status-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .status-badge {
-    padding: 5px 15px;
-    border-radius: 15px;
-    font-size: 14px;
-  }
-  
-  .status-badge.denied {
-    background-color: #DC3545;
-    color: white;
-  }
-  
-  .status-badge.pending {
-    background-color: #FFC107;
-    color: white;
-  }
-  
-  .status-badge.ongoing {
-    background-color: #2D8B86;
-    color: white;
-  }
-  
-  .status-badge.accepted {
-    background-color: #4CAF50;
-    color: white;
-  }
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.main-content {
+  flex: 1;
+  padding: 32px;
+}
+
+.services-section {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 48px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.services-header h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.services-stats {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.services-stats > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-stats > div:not(:first-child) {
+  border-left: 1px solid #e5e7eb;
+  padding-left: 32px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat-label {
+  color: #6b7280;
+}
+
+.services-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.button-green {
+  background-color: #10b981;
+}
+
+.button-green:hover {
+  background-color: #059669;
+}
+
+.button-teal {
+  background-color: #0d9488;
+}
+
+.button-teal:hover {
+  background-color: #0f766e;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.service-date {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.service-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.service-location {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.service-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.status-badge {
+  padding: 4px 16px;
+  border-radius: 9999px;
+  font-size: 14px;
+  color: white;
+}
+
+.bg-red-600 {
+  background-color: #dc2626;
+}
+
+.bg-orange-500 {
+  background-color: #f59e0b;
+}
+
+.bg-teal-600 {
+  background-color: #0d9488;
+}
+
+.bg-green-500 {
+  background-color: #10b981;
+}
+

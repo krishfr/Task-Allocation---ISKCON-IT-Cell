@@ -1,7 +1,11 @@
+.main123 {
+  display: flex;
+}
+
 .calendar-dashboard {
     padding: 20px;
     height: calc(100vh - 64px);
-    margin-left: 250px;
+    width: 100%;
     background-color: #f5f5f5;
     overflow-y: auto;
   }
@@ -146,7 +150,7 @@
     background: #f8f8f8;
     padding: 20px;
     border-radius: 8px;
-    flex: 1;
+    
   }
   
   .day-details h3 {
@@ -158,23 +162,49 @@
   }
   
   .lotus-icon {
-    width: 100px;
-    height: 100px;
-    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /* Ensures the container takes up full width */
+    margin: 20px 0; /* Adds space above and below the image */
   }
+  
+  .lotus-icon img {
+    width: 220px;
+    height: 100px;
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+    display: block;  /* Ensures the image is treated as a block-level element */
+    margin: 0 auto;  /* Centers the image horizontally */
+  }
+  
   
   .lotus {
     fill: #ffd700;
   }
   
   .assign-service {
-    background: none;
-    border: none;
-    color: #4CAF50;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 10px;
+    background-color: #2D8B86;  /* Teal color */
+    color: white;  /* Text color */
+    border: none;  /* Remove border */
+    padding: 12px 20px;  /* Add padding for a better size */
+    font-size: 16px;  /* Set font size */
+    border-radius: 8px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+    font-weight: bold;  /* Bold text */
+    text-decoration: none;  /* Ensure no underline */
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Smooth hover effects */
   }
+
+  .assign-service:hover {
+    background-color: #1E6A5C;  /* Darker teal on hover */
+    transform: scale(1.05);  /* Slightly enlarge button on hover */
+  }
+  
+  .assign-service:focus {
+    outline: none;  /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(45, 139, 134, 0.8);  /* Add custom focus box-shadow */
+  }
+  
   
   .events-list {
     display: flex;

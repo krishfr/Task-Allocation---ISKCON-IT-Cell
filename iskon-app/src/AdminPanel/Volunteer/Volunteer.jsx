@@ -2,6 +2,7 @@ import React from 'react';
 import './Volunteer.css';
 import Sidebar from '../Component/Sidebar/Sidebar.jsx'
 import Dheader from '../Component/Dheader/Dheader.jsx'
+import User from "../../Assets/user.png"
 
 const volunteers = [
   {
@@ -117,7 +118,7 @@ const volunteers = [
 const VolunteerDashboard = () => {
   return (
     
-    <>
+    <div className='main'>
     <Sidebar/>
     <div className="volunteer-dashboard">
         <Dheader/>
@@ -142,7 +143,7 @@ const VolunteerDashboard = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -151,7 +152,7 @@ const VolunteerCard = ({ name, department, phone, email, location, status }) => 
    <div className="volunteer-card">
       <div className="volunteer-header">
         <div className="volunteer-avatar">
-          <img src="/placeholder.svg" alt={name} />
+          <img src={User ||'/placeholder.svg'} alt={name} />
           <span className={`status-indicator ${status}`}></span>
         </div>
         <div className="volunteer-info">

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import './Calendar.css';
 import Sidebar from '../Component/Sidebar/Sidebar.jsx'
 import Dheader from '../Component/Dheader/Dheader.jsx'
+import iskConCal from './iskon_Cal.png';
 
 const DAYS_OF_WEEK = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -58,7 +59,7 @@ const CalendarDashboard = () => {
   };
 
   return (
-    <>
+    <div className='main123'>
     <Sidebar/>
     <div className="calendar-dashboard">
     <Dheader/>
@@ -109,7 +110,7 @@ const CalendarDashboard = () => {
         </div>
       </div>
     </div>
-    </>
+    </div>
   );
 };
 
@@ -172,12 +173,9 @@ const DayDetails = ({ selectedDate, events }) => {
         <div className="no-events">
           <p>Nothing planned for the day</p>
           <div className="lotus-icon">
-            {/* SVG Lotus icon */}
-            <svg viewBox="0 0 100 100" className="lotus">
-              <path d="M50 90c-20-20-20-40-20-60 0-20 40-20 40 0 0 20-20 60-20 60z" />
-              <path d="M50 90c20-20 20-40 20-60 0-20-40-20-40 0 0 20 20 60 20 60z" />
-            </svg>
+            <img src={iskConCal} alt="Lotus Icon" />
           </div>
+          
           <button className="assign-service">Assign a Service</button>
         </div>
       ) : (
