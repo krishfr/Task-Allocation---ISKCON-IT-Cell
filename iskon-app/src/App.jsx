@@ -9,7 +9,10 @@ import Contact from './Contact/Contact.jsx';
 import Footer from "./components/Footer/Footer.jsx"
 import Login from './Login/Login.jsx';
 import About from './About/About.jsx';
-//import AdminHub from './AdminHub/Dashboard.jsx';
+import AdminDashboard from './AdminPanel/Dashboard/Dashboard.jsx';
+import VolunteerDashboard from './AdminPanel/volunteer/Volunteer.jsx';
+import Calendar from './AdminPanel/Calendar/Calendar.jsx';
+
 
 // Animation Variants for Page Transitions
 const pageVariants = {
@@ -42,7 +45,9 @@ function AnimatedRoutes() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
             <Route path="/about" element={<About />} />
-            {/* <Route path="/admin/*" element={<AdminHub />} /> */}
+            <Route path="/admin/*" element={<AdminDashboard />} />
+            <Route path="/admin/volunteer" element={<VolunteerDashboard />} />
+            <Route path="/admin/calendar" element={<Calendar/>} />
           </Routes>
         </motion.div>
       </AnimatePresence>
