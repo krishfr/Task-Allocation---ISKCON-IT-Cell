@@ -78,7 +78,7 @@ function Login() {
               Already have an account?
             </span>
           </div>
-          <div className="divider">- or -</div>
+          <div className="divider123">- or -</div>
           <button className="google-button">
             <img src={GoogleIcon || "/placeholder.svg"} alt="Google" className="google-icon" />
             Log in with Google

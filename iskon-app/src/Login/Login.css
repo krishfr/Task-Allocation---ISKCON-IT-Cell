@@ -16,12 +16,25 @@
     max-width: 400px;
   }
   
-  .login-form, .signup-form {
+  .login-form {
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-right: 40px;
   }
+
+  .signup-form {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Limit the width */
+    margin: 50px auto; /* Center the form */
+    padding: 20px; /* Add padding inside the form */
+    padding-right: 40px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
   
   h2 {
     text-align: center;
@@ -31,11 +44,11 @@
   
   .input-field {
     width: 100%;
-    padding: 3px;
+    padding: 10px;
     margin: 8px 0;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 14px;
+    font-size: 12px;
   }
   
   .mobile-input {
@@ -45,9 +58,11 @@
   
   .country-code {
     width: 120px;
+    margin: 8px 0;
+    height: 40px;
     padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 16px;
     background: white;
   }
   

@@ -2,6 +2,7 @@
 body{
     font-family: 'Varela Round', sans-serif;
 }
+
   .header-about {
     background-image: url('hero-image.jpg');
     background-size: cover;
@@ -92,6 +93,7 @@ body{
   
   .scrolling-text-container-about {
     position: relative;
+    text-align: center;
     width: 100%;
     height: 100px;
     display: flex;

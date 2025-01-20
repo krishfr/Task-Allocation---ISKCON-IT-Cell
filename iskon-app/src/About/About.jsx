@@ -50,8 +50,8 @@ const AboutPage = () => {
 
       <div className="scrolling-text-container-about">
         <h5 className="scrolling-text-about">
-          हरे कृष्ण, हरे कृष्ण, कृष्ण कृष्ण, हरे हरे <br />
-          हरे रामा हरे रामा, रामा रामा, हरे हरे..
+          || हरे कृष्ण, हरे कृष्ण, कृष्ण कृष्ण, हरे हरे <br />
+          हरे राम हरे राम, राम राम, हरे हरे ||
         </h5>
       </div>
 

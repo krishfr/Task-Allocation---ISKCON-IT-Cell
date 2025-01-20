@@ -9,6 +9,7 @@ import Contact from './Contact/Contact.jsx';
 import Footer from "./components/Footer/Footer.jsx"
 import Login from './Login/Login.jsx';
 import About from './About/About.jsx';
+//import AdminHub from './AdminHub/Dashboard.jsx';
 
 // Animation Variants for Page Transitions
 const pageVariants = {
@@ -21,9 +22,11 @@ const pageVariants = {
 function AnimatedRoutes() {
   const location = useLocation();
 
+  const isAdminRoute = location.pathname.startsWith('/admin');
+
   return (
     <div>
-      <Navbar />
+      {!isAdminRoute && <Navbar />}
       <AnimatePresence mode="wait">
         <motion.div
           key={location.pathname}
@@ -36,13 +39,14 @@ function AnimatedRoutes() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<HomePage />} />
             <Route path="/services" element={<ServicesPage />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
             <Route path="/about" element={<About />} />
+            {/* <Route path="/admin/*" element={<AdminHub />} /> */}
           </Routes>
         </motion.div>
       </AnimatePresence>
-      <Footer/>
+      {!isAdminRoute && <Footer />}
     </div>
   );
 }

@@ -90,6 +90,7 @@ body {
   background: linear-gradient(180deg, #fff 60%, #f9f9f9);
   border-top: 1px solid #eee;
   border-radius: 0 0 10px 10px;
+  padding-bottom: 30px;
 }
 
 .team-content h5 {

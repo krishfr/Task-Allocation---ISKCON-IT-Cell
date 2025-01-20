@@ -21,13 +21,28 @@ const Contact = () => {
   <div className="image-container">
     <img className="temple-img" src="./src/Contact/icon/Templeimg2.png" alt="ISKCON Temple" />
   </div>
-  <div className="info">
-    <h1 className="section-title">GET IN TOUCH</h1>
-    <p className="description">
-      The temple is now open for public visits following Maharashtra guidelines. Experience the serene environment and divinity at ISKCON Pune.
-    </p>
+  <div className="text-container">
+    <div className="info">
+      <h1 className="section-title">GET IN TOUCH</h1>
+      <p className="description">
+        The temple is now open for public visits following Maharashtra guidelines. Experience the serene environment and divinity at ISKCON Pune.
+      </p>
+    </div>
+    <div className="info">
+      <h1 className="section-title">CONNECT WITH US</h1>
+      <p className="description">
+        Stay updated with ISKCON Pune's activities, teachings, and events through our website and social media channels. Let's walk together on the path of devotion and self-realization.
+      </p>
+    </div>
+    <div className="info">
+      <h1 className="section-title">EXPERIENCE THE DIVINE BLISS</h1>
+      <p className="description">
+        Step into the sacred premises of ISKCON Pune and immerse yourself in an atmosphere of spirituality, peace, and devotion. With serene surroundings and a magnificent temple architecture, each visit is a journey into a divine realm.
+      </p>
+    </div>
   </div>
 </div>
+
 
      {/*  contact-page  */}
       <div className="contact-page">
