@@ -5,6 +5,7 @@
 }
 
 .volunteer-dashboard {
+  margin-top: 175px;
     padding: 20px;
     width: 100%;
     height: calc(100vh - 64px); /* Adjust based on your header height */

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Home, Users, MessageSquare, Calendar } from "lucide-react";
 import "./Sidebar.css";
 
@@ -6,22 +7,35 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <nav className="nav">
-        <a href="/admin" className="nav-link active">
+        <NavLink
+          to="/admin"
+          end
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
           <Home className="nav-icon" />
           <span>Dashboard</span>
-        </a>
-        <a href="/admin/volunteer" className="nav-link">
+        </NavLink>
+        <NavLink
+          to="/admin/volunteer"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
           <Users className="nav-icon" />
           <span>Volunteers</span>
-        </a>
-        <a href="/admin" className="nav-link">
+        </NavLink>
+        <NavLink
+          to="/admin/messages"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
           <MessageSquare className="nav-icon" />
           <span>Messages</span>
-        </a>
-        <a href="/admin/calendar" className="nav-link">
+        </NavLink>
+        <NavLink
+          to="/admin/calendar"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
           <Calendar className="nav-icon" />
           <span>Calendar</span>
-        </a>
+        </NavLink>
       </nav>
     </div>
   );
