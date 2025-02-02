@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Donation.css';
 import Image1 from '../Assets/annadaan.png'
 import Image2 from '../Assets/bhagvaadgita.png'
@@ -25,7 +25,7 @@ const DonationSection = () => {
     <section className="donation-section">
       <h2 className="donation-title">Make a Donation</h2>
       <p className="donation-quote">Srila Prabhupada said,</p>
-      <p className="donation-main-quote">"Charity should only be given to propagate Krishna Consciousness all over the world."</p>
+      <p className="donation-main-quote">Charity should only be given to propagate Krishna Consciousness all over the world.</p>
       <p className="donation-subtext">No matter small or big, Krishna sees your Heart, whether you want to serve him or not.</p>
       <div className="donation-grid">
         {donationCategories.map((category, index) => (

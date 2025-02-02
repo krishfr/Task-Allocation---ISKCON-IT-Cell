@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import{ useState, useEffect } from 'react';
 import CountUp from 'react-countup';
 import './HomePage.css'
 import carousel1 from '../Assets/carousel1.jpg'
@@ -25,7 +24,7 @@ const HomePage = () => {
       setCurrentSlide((prev) => (prev + 1) % images.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [images.length]);
 
   return (
     <div className="homepage">

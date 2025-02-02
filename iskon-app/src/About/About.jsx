@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./About.css";
 import about from "../Assets/about.jpeg";
 import BgImage from "./design-manadal1.png"

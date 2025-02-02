@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Volunteer.css';
 import Sidebar from '../Component/Sidebar/Sidebar.jsx'
 import Dheader from '../Component/Dheader/Dheader.jsx'
@@ -147,6 +147,7 @@ const VolunteerDashboard = () => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const VolunteerCard = ({ name, department, phone, email, location, status }) => {
   return (<>
    <div className="volunteer-card">

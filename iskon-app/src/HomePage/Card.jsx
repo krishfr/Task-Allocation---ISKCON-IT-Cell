@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import{ useState } from "react";
 import Edu from "../Assets/cards/edu.jpg";
 import Feed from "../Assets/cards/feed.jpg";
 import Celeb from "../Assets/cards/celebrate.jpg";

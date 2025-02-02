@@ -1,5 +1,5 @@
 // Login.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Login.css';
 import GoogleIcon from '../Assets/google-icon.png'; // Make sure to add a Google icon image
 
@@ -45,7 +45,7 @@ function Login() {
               <button className="next-button">Next</button>
               <div className="form-footer">
                 <span className="create-account" onClick={handleSignUpClick}>
-                  Don't have an account?
+                  Don&apos;t have an account?
                 </span>
                 <span className="reset-link">Reset Password</span>
               </div>

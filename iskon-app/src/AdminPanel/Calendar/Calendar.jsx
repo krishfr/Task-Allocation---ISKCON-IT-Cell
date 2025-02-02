@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 'use client'
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Calendar.css';
 import Sidebar from '../Component/Sidebar/Sidebar.jsx'
 import Dheader from '../Component/Dheader/Dheader.jsx'
@@ -114,9 +115,12 @@ const CalendarDashboard = () => {
   );
 };
 
-const MiniCalendar = ({ currentDate, selectedDate, onDateSelect, onMonthChange }) => {
+// eslint-disable-next-line react/prop-types
+const MiniCalendar = ({ currentDate, selectedDate, onDateSelect }) => {
   const getDaysArray = () => {
+    // eslint-disable-next-line react/prop-types
     const year = currentDate.getFullYear();
+    // eslint-disable-next-line react/prop-types
     const month = currentDate.getMonth();
     const firstDay = new Date(year, month, 1);
     const lastDay = new Date(year, month + 1, 0);

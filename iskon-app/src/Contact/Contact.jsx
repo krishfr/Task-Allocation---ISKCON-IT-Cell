@@ -31,7 +31,7 @@ const Contact = () => {
     <div className="info">
       <h1 className="section-title">CONNECT WITH US</h1>
       <p className="description">
-        Stay updated with ISKCON Pune's activities, teachings, and events through our website and social media channels. Let's walk together on the path of devotion and self-realization.
+        Stay updated with ISKCON Pune&apos;s activities, teachings, and events through our website and social media channels. Let&apos;s walk together on the path of devotion and self-realization.
       </p>
     </div>
     <div className="info">
