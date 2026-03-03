@@ -55,6 +55,6 @@ Future Enhancements
 • Priority and deadline filters
 • Analytics dashboard for task stats
 
-Author
 
-Krish Chaudhari
+
+
